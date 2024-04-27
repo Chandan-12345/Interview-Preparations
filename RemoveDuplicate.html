@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const data = [2,3,4,5,7,8,66,4,2,3,4,5,];
+
+         const uniqArr = data.reduce((acc, ele) =>{
+            if(!acc.includes(ele)){
+                acc.push(ele)
+            }
+            return acc;
+         },[])
+
+         console.log(uniqArr,"sgfa");
+    </script>
+</body>
+</html>
