@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [1, 2, 3, 4, 5, 5, 6, 6, 5, 4, 4, 3];
+
+        const findDistinctValues = (array) => {
+            let distinctValues = []
+
+            for (let i = 0; i < array.length; i++) {
+                let isdistinct = true;
+
+                for (let j = 0; j < i; j++) {
+                    if (array[i] == array[j]) {
+                        isdistinct = false;
+                        break;
+
+                    }
+                } if (isdistinct) {
+
+                    distinctValues.push(array[i])
+                }
+
+            }
+            return distinctValues
+        }
+
+        let result = findDistinctValues(array);
+        console.log(result);
+    </script>
+</body>
+
+</html>
